@@ -21,10 +21,6 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-// Root route
-app.get('/', (req, res) => {
-    res.send('Hello, World!');
-  });
 
   // Mount message router
 app.use("/api/v1/message",messageRouter); 
